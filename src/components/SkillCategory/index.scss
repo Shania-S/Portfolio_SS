@@ -1,0 +1,59 @@
+.category-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 0px 0px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 5px 0px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  width: 580px;
+  margin-bottom: 40px;
+}
+
+.category-card h2 {
+  margin-top: 10px;
+  font-size: 1.7rem;
+}
+
+.tech-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.tech-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns items horizontally */
+  justify-content: center;
+}
+
+.tech-list span {
+  font-size: 0.5em;
+  font-weight: 600;
+  color: #b44c5f;
+}
+
+.tech-list .tech-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all 0.3s;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
