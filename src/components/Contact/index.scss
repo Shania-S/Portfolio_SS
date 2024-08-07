@@ -1,0 +1,39 @@
+.portfolio-contact .portfolio-contact-title {
+  color: #800020;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: 'Morganite-Black', sans-serif;
+  letter-spacing: 8px;
+}
+
+.portfolio-contact .portfolio-contact-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-contact .portfolio-contact-list .social {
+  padding: 15px 15px;
+  border: solid 1px #800020;
+  border-radius: 50px;
+  display: flex;
+  background-color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+}
+.portfolio-contact .portfolio-contact-list .social:hover {
+  background-color: gainsboro;
+}
+
+.portfolio-contact .portfolio-contact-list .social.linkedin {
+  color: #0077b5;
+  margin-right: 50px;
+}
+
+.portfolio-contact .portfolio-contact-list .social.mail {
+  color: #d93025;
+  margin-right: 50px;
+}
+
+.portfolio-contact .portfolio-contact-list .social.discord {
+  color: #7289da;
+}

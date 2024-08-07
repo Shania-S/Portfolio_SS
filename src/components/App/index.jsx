@@ -3,6 +3,7 @@ import { Banner } from '../Banner';
 import { Introduction } from '../Introduction';
 import { Skills } from '../Skills';
 import { Work } from '../Work';
+import { Contact } from '../Contact';
 import './index.scss';
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <Skills></Skills>
       <span>------------------------------#------------------------------</span>
       <Work></Work>
+      <span>------------------------------#------------------------------</span>
+      <Contact></Contact>
       <div></div>
     </>
   );

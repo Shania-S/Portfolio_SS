@@ -29,20 +29,22 @@
   border-top: medium solid rgba(214, 91, 144, 0.765);
 }
 
-.work-card .work-buttons button {
+.work-card .work-buttons a {
   margin: 10px;
   /* border-bottom: 2px solid rgba(214, 91, 144, 0.765);*/
   color: rgba(214, 91, 144, 0.765);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.2em 0.4em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 0.7em;
 }
 
-.work-card .work-buttons button:hover {
+.work-card .work-buttons a:hover {
   border: none;
   color: rgba(214, 21, 105, 0.765);
 }
@@ -56,10 +58,16 @@
   width: 100%;
 }
 
+.work-card .description-container {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
 .work-card img {
   width: 100%;
   height: 100%;
-  object-fit: conatin;
+  object-fit: contain;
 }
 
 .work-card .work-description {
@@ -67,8 +75,16 @@
   font-weight: 600;
   color: #b44c5f;
   margin: 0;
+  flex-grow: 1;
+  overflow: hidden; /* Hide the overflow text */
 }
 
 .work-card span {
   font-size: 0.6em;
+  height: 10%;
+  cursor: pointer;
+}
+
+.work-card span:hover {
+  color: #b44c5f;
 }

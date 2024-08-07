@@ -10,4 +10,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+}
+
+.portfolio-work .work-category-card li {
+  margin-bottom: 30px;
 }

@@ -16,17 +16,12 @@ export function Introduction() {
           <span>
             Passionnée par l'apprentissage des langues étrangères et intéressée
             par le développement web et les nouvelles technologies, j'ai
-            toujours eu pour ambition de marier ces deux domaines. Savoir que
-            mes projets peuvent bénéficier à un grand nombre de personnes à
-            travers le monde constitue une motivation majeure pour moi.
+            toujours eu pour ambition de marier ces deux domaines.
           </span>
           <br></br>
-          <br></br>Mon objectif est de continuer sur cette voie et d'atteindre
-          un public mondial en utilisant mes compétences linguistiques pour
-          rendre l'expérience utilisateur la plus inclusive possible. En
-          développant des outils adaptés à diverses cultures et langues, je
-          souhaite offrir une aide précieuse à des personnes de toutes origines
-          culturelles.
+          <br></br>En développant des outils adaptés à diverses cultures et
+          langues, je souhaite offrir une aide précieuse à des personnes de
+          toutes origines culturelles.
         </p>
 
         <img className='portfolio-intro-img' src={introImage} />
