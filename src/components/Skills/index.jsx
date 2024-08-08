@@ -55,7 +55,7 @@ const toolsList = [
 
 export function Skills() {
   return (
-    <div className='portfolio-skills'>
+    <div className='portfolio-skills' id='Skills'>
       <h1 className='portfolio-skills-title'>Mes compétences</h1>
       <div className='skill-category-card'>
         <SkillCategory title={'Front-end'} images={frontList}></SkillCategory>

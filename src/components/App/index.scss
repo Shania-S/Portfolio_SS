@@ -1,6 +1,21 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+.app-container {
+  min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+.main-content {
+  flex: 1; /* Makes sure content grows to fill the available space */
+}
+
+@media (max-width: 767px) {
+  #root {
+  }
+  .main-content span {
+    font-size: 0.5em;
+  }
 }

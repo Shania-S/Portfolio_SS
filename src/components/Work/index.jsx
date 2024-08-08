@@ -70,7 +70,7 @@ const workList = [
 
 export function Work() {
   return (
-    <div className='portfolio-work'>
+    <div className='portfolio-work' id='Work'>
       <h1 className='portfolio-work-title'>Mes travaux</h1>
 
       <ul className='work-category-card'>

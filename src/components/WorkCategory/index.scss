@@ -88,3 +88,18 @@
 .work-card span:hover {
   color: #b44c5f;
 }
+
+@media (max-width: 767px) {
+  .work-card {
+    width: 100%;
+    height: 400px;
+  }
+
+  .work-card .work-container .title {
+    font-size: 0.7em;
+  }
+
+  .work-card .work-description {
+    font-size: 0.5em;
+  }
+}

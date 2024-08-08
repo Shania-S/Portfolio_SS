@@ -1,0 +1,37 @@
+.portfolio-footer {
+  background-color: #800020;
+  width: 100%;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.footer-quote p {
+  color: white;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.footer-credit span {
+  font-style: italic;
+  color: white;
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+@media (max-width: 767px) {
+  .portfolio-footer {
+    position: static; /* or relative, depending on your design */
+    bottom: auto;
+    /* Add padding or margin adjustments if needed */
+  }
+  .footer-quote p {
+    font-size: 0.5em;
+  }
+
+  .footer-credit span {
+    font-size: 0.5em;
+  }
+}

@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* Define the height */
+  z-index: 1000; /* Ensure it's above other elements */
+  padding: 0 20px; /* Optional: padding for content */
+  background: hsla(0, 0%, 90%, 0.8);
+  backdrop-filter: blur(10px) saturate(1.7);
 }
 .portfolio-logo-banner {
   display: flex;
@@ -29,9 +38,83 @@
   cursor: pointer;
 }
 
-.portfolio-nav__list li {
+.portfolio-nav__list a {
   padding-left: 45px;
   line-height: 34.22px;
   text-align: right;
   color: #800020;
+}
+.portfolio-nav__list li a {
+  text-decoration: none;
+}
+
+.portfolio-nav__list a:hover {
+  color: #ec4775;
+}
+
+.portfolio-nav__list .portfolio-nav__item.iconBar {
+  display: none;
+}
+
+.iconBar {
+  display: none;
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  .portfolio-logo-banner .portfolio-logo-title {
+    font-size: 1rem;
+  }
+
+  .nav-elements {
+    top: 80px; /* Adjust based on header height */
+    left: 0;
+    background: hsla(0, 0%, 90%, 0.95);
+    position: absolute;
+    right: 0;
+    width: 0px;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.open {
+    width: 100%;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-elements ul li {
+    font-size: 0.8em;
+  }
+
+  .nav-elements ul li a {
+    padding: 0;
+  }
+
+  .iconBar {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+  .portfolio-logo-banner .portfolio-logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .portfolio-logo-banner .portfolio-logo-title {
+    font-size: 1rem;
+  }
+
+  .nav-elements ul li a {
+    font-size: 0.7em;
+  }
 }

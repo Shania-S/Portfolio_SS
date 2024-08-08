@@ -5,7 +5,7 @@ import { FaDiscord } from 'react-icons/fa';
 
 export function Contact() {
   return (
-    <div className='portfolio-contact'>
+    <div className='portfolio-contact' id='Contact'>
       <h1 className='portfolio-contact-title'>Contact</h1>
       <div className='portfolio-contact-list'>
         <a
@@ -14,7 +14,7 @@ export function Contact() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FaLinkedinIn />
+          <FaLinkedinIn style={{ fontSize: '1rem' }} />
         </a>
         <a
           className='social mail'
@@ -22,7 +22,7 @@ export function Contact() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <IoIosMail />
+          <IoIosMail style={{ fontSize: '1rem' }} />
         </a>
         <a
           className='social discord'
@@ -30,7 +30,7 @@ export function Contact() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <FaDiscord />
+          <FaDiscord style={{ fontSize: '1rem' }} />
         </a>
       </div>
     </div>

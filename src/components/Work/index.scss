@@ -11,8 +11,35 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0 5em;
 }
 
 .portfolio-work .work-category-card li {
   margin-bottom: 30px;
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  .portfolio-work .work-category-card {
+    flex-direction: column;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .portfolio-work .portfolio-work-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+  .portfolio-work .work-category-card {
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  .portfolio-work ul {
+    padding: 0;
+  }
 }

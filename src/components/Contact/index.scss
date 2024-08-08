@@ -13,13 +13,15 @@
 
 .portfolio-contact .portfolio-contact-list .social {
   padding: 15px 15px;
-  border: solid 1px #800020;
   border-radius: 50px;
   display: flex;
   background-color: whitesmoke;
   cursor: pointer;
   text-decoration: none;
+  box-shadow: rgba(214, 91, 144, 0.765) 0px 2px 4px 0px,
+    rgba(134, 64, 141, 0.772) 0px 2px 16px 0px;
 }
+
 .portfolio-contact .portfolio-contact-list .social:hover {
   background-color: gainsboro;
 }
@@ -36,4 +38,16 @@
 
 .portfolio-contact .portfolio-contact-list .social.discord {
   color: #7289da;
+}
+
+@media (max-width: 767px) {
+  .portfolio-contact .portfolio-contact-title {
+    font-size: 1.5em;
+  }
+
+  .portfolio-contact .portfolio-contact-list .social {
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-size: 1em;
+  }
 }

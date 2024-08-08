@@ -1,5 +1,16 @@
 .portfolio-introduction {
-  margin: 100px 100px;
+  margin: 50px;
+}
+
+.portfolio-introduction .downloadResume {
+  color: #800020;
+  font-size: 0.8em;
+}
+
+.portfolio-introduction .downloadResume a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ec4775;
 }
 
 .portfolio-introduction .portfolio-intro-title {
@@ -20,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5em;
 }
 
 .portfolio-introduction .portfolio-intro-para {
@@ -32,4 +44,52 @@
 .portfolio-introduction .portfolio-intro-img {
   width: 350px;
   height: 350px;
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  .portfolio-introduction {
+    margin: 0;
+  }
+  .portfolio-introduction .portfolio-intro-title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .portfolio-introduction .downloadResume {
+    font-size: 0.5em;
+  }
+
+  .portfolio-introduction .portfolio-intro-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0.4em;
+  }
+
+  .portfolio-intro-para .intro-phrase {
+    font-size: 1.2em;
+  }
+
+  .portfolio-introduction .portfolio-intro-para {
+    font-size: 0.5em;
+    margin: 0;
+  }
+
+  .portfolio-introduction .portfolio-intro-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+  .portfolio-introduction .portfolio-intro-details {
+    padding: 0;
+  }
+
+  .portfolio-intro-para .intro-phrase {
+    font-size: 1.2em;
+  }
 }

@@ -1,0 +1,35 @@
+.portfolio-conclusion {
+  margin: 0 100px;
+}
+
+.portfolio-conclusion-para .conclusion-phrase {
+  font-weight: bold;
+  color: #ec4775;
+  margin-bottom: 50px;
+}
+
+.portfolio-conclusion .portfolio-conclusion-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-conclusion .portfolio-conclusion-img {
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 767px) {
+  .portfolio-conclusion .portfolio-conclusion-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .portfolio-conclusion-para .conclusion-phrase {
+    font-size: 0.5em;
+  }
+
+  .portfolio-conclusion {
+    margin: 10px 10px 0 10px;
+  }
+}
