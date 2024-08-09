@@ -2,11 +2,13 @@ import './index.scss';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaDiscord } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 export function Contact() {
+  const { t } = useTranslation();
   return (
     <div className='portfolio-contact' id='Contact'>
-      <h1 className='portfolio-contact-title'>Contact</h1>
+      <h1 className='portfolio-contact-title'>{t('Contact')}</h1>
       <div className='portfolio-contact-list'>
         <a
           className='social linkedin'
