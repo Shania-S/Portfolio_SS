@@ -1,4 +1,5 @@
 import './index.scss';
+import { useTranslation } from 'react-i18next';
 import { SkillCategory } from '../SkillCategory';
 import aspnetIcon from '../../assets/images/front/aspnetIcon.jpg';
 import bootstrapIcon from '../../assets/images/front/bootstrapIcon.png';
@@ -54,13 +55,14 @@ const toolsList = [
 ];
 
 export function Skills() {
+  const { t } = useTranslation();
   return (
     <div className='portfolio-skills' id='Skills'>
-      <h1 className='portfolio-skills-title'>Mes compétences</h1>
+      <h1 className='portfolio-skills-title'> {t('Skills')}</h1>
       <div className='skill-category-card'>
-        <SkillCategory title={'Front-end'} images={frontList}></SkillCategory>
-        <SkillCategory title={'Back-end'} images={backList}></SkillCategory>
-        <SkillCategory title={'Outils'} images={toolsList}></SkillCategory>
+        <SkillCategory title={t('Frontend')} images={frontList}></SkillCategory>
+        <SkillCategory title={t('Backend')} images={backList}></SkillCategory>
+        <SkillCategory title={t('Tools')} images={toolsList}></SkillCategory>
       </div>
     </div>
   );

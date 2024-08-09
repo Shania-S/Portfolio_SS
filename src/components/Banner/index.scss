@@ -15,6 +15,7 @@
 .portfolio-logo-banner {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .portfolio-logo-banner .portfolio-logo-img {
@@ -36,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  padding: 0;
 }
 
 .portfolio-nav__list a {
@@ -58,6 +60,57 @@
 
 .iconBar {
   display: none;
+}
+
+.dropdown-button-lang {
+  padding-left: 45px; /* px-4 */
+  padding-top: 0.3rem; /* py-2 */
+  padding-bottom: 0.3rem; /* py-2 */
+  border-radius: 0.25rem; /* rounded */
+  cursor: pointer; /* cursor-pointer */
+  position: relative; /* relative */
+  transition: border-color 0.3s;
+  border: none;
+  background-color: transparent;
+  color: #800020;
+}
+
+.options-lang-container {
+  position: absolute; /* absolute */
+  right: -10%; /* left-full */
+  transform: translateX(2.25rem) translateY(5%); /* translate-x-9 translate-y-full */
+  border-radius: 0.25rem; /* rounded */
+  width: max-content; /* w-max */
+  background-color: #efdde2;
+}
+
+.options-lang-container ul {
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  padding: 0.5rem; /* p-2 */
+}
+
+.options-lang-container ul .lang-item {
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* gap-2 */
+  padding: 0.4rem; /* p-4 */
+  border-radius: 0.25rem; /* rounded */
+  transition: all 200ms; /* transition-all duration-200 */
+}
+
+.options-lang-container ul .lang-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.options-lang-container ul .lang-item button span {
+  margin-right: 8px;
+}
+
+.options-lang-container ul .lang-item:hover {
+  background-color: white;
 }
 
 /*Mobile*/
@@ -99,6 +152,7 @@
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-left: 15px;
   }
 }
 

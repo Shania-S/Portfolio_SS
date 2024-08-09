@@ -1,12 +1,13 @@
 import './index.scss';
+import { useTranslation } from 'react-i18next';
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <div className='portfolio-footer'>
       <div className='footer-quote'>
         <p>
-          "Everybody comes to a point in their life when they want to quit. But
-          it's what you do at that moment that determines who you are" <br></br>
+          "{t('Quote')}" <br></br>
           <span>- David Goggins - </span>
         </p>
       </div>

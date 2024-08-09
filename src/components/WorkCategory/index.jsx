@@ -1,6 +1,7 @@
 import './index.scss';
 import { WorkModal } from '../WorkModal';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function WorkCategory({
   workImage,
@@ -13,6 +14,7 @@ export function WorkCategory({
   workLink,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className='work-card'>
@@ -24,7 +26,7 @@ export function WorkCategory({
           <h2 className='title'>{workTitle}</h2>
           <p className='work-description'>{workDescription}</p>
         </div>
-        <span onClick={() => setIsOpen(true)}>Voir plus...</span>
+        <span onClick={() => setIsOpen(true)}>{t('See_more')}...</span>
       </div>
       {isOpen && (
         <WorkModal
@@ -35,7 +37,7 @@ export function WorkCategory({
         />
       )}
       <div className='work-buttons'>
-        <a href={workLink}>Voir le code</a>
+        <a href={workLink}>{t('See_code')}</a>
       </div>
     </div>
   );
