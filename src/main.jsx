@@ -20,7 +20,14 @@ i18n
     supportedLngs: ['en', 'fr', 'es', 'ko'],
     fallbackLng: currentLanguageCode,
     detection: {
-      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+      order: [
+        'cookie',
+        'navigator',
+        'htmlTag',
+        'localStorage',
+        'path',
+        'subdomain',
+      ],
       caches: ['cookie'],
     },
     backend: {
