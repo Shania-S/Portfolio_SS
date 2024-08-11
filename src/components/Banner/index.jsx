@@ -46,7 +46,10 @@ export function Banner() {
         <span className='portfolio-logo-title'>- ShA# -</span>
       </div>
       <button className='dropdown-button-lang' onClick={toggleDropdown}>
-        <MdLanguage style={{ fontSize: '30px' }} />
+        <MdLanguage
+          style={{ fontSize: '30px' }}
+          className='globe-lang-switch'
+        />
 
         {isDropdownOpen && (
           <div className='options-lang-container'>
