@@ -8,6 +8,9 @@ import App from './components/App';
 import './index.scss';
 import './assets/fonts/fonts.scss';
 import 'flag-icon-css/css/flag-icons.min.css';
+import cookies from 'js-cookie';
+
+const currentLanguageCode = cookies.get('i18next') || 'en';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -15,8 +18,7 @@ i18n
   .use(HttpApi)
   .init({
     supportedLngs: ['en', 'fr', 'es', 'ko'],
-    fallbackLng: 'en',
-    lng: 'en', // Add this line to force the language for testing
+    fallbackLng: currentLanguageCode,
     detection: {
       order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie'],
