@@ -30,7 +30,8 @@ export function Work() {
       problem: t('Nina_problem_description'),
       solution: t('Nina_solution_description'),
       skills: t('Nina_skill_description'),
-      codeLink: 'https://github.com/Shania-S/Nina-Carducci',
+      codeLink:
+        'https://github.com/Shania-S/Nina-Carducci/tree/Optimized_version',
     },
     {
       id: 3,

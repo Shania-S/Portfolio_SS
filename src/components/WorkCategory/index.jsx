@@ -37,7 +37,9 @@ export function WorkCategory({
         />
       )}
       <div className='work-buttons'>
-        <a href={workLink}>{t('See_code')}</a>
+        <a href={workLink} target='_blank' rel='noopener noreferrer'>
+          {t('See_code')}
+        </a>
       </div>
     </div>
   );
