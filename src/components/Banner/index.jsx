@@ -1,7 +1,7 @@
 import './index.scss';
 import React, { useState } from 'react';
 import { FaBarsStaggered } from 'react-icons/fa6';
-import portfolioLogoBanner from './../../assets/images/grin_smile.png';
+import portfolioLogoBanner from './../../assets/images/grin_smile.webp';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { MdLanguage } from 'react-icons/md';
@@ -45,7 +45,11 @@ export function Banner() {
         />
         <span className='portfolio-logo-title'>- ShA# -</span>
       </div>
-      <button className='dropdown-button-lang' onClick={toggleDropdown}>
+      <button
+        className='dropdown-button-lang'
+        onClick={toggleDropdown}
+        aria-label='display the languages'
+      >
         <MdLanguage
           style={{ fontSize: '30px' }}
           className='globe-lang-switch'

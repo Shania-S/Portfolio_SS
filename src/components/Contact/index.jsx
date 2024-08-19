@@ -15,6 +15,7 @@ export function Contact() {
           href='https://www.linkedin.com/in/shania-sidimana/'
           target='_blank'
           rel='noopener noreferrer'
+          aria-label='Redirecting to my linkedin account'
         >
           <FaLinkedinIn style={{ fontSize: '1rem' }} />
         </a>
@@ -23,6 +24,7 @@ export function Contact() {
           href='mailto:shaniasidimana1@gmail.com'
           target='_blank'
           rel='noopener noreferrer'
+          aria-label='Opening the email box'
         >
           <IoIosMail style={{ fontSize: '1rem' }} />
         </a>
@@ -31,6 +33,7 @@ export function Contact() {
           href='https://discord.com/users/shania0938'
           target='_blank'
           rel='noopener noreferrer'
+          aria-label='Redirecting to my discord accound'
         >
           <FaDiscord style={{ fontSize: '1rem' }} />
         </a>

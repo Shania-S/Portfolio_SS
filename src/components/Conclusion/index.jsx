@@ -1,5 +1,5 @@
 import './index.scss';
-import concluImage from './../../assets/images/byebye.png';
+import concluImage from './../../assets/images/byebye.webp';
 import { useTranslation } from 'react-i18next';
 
 export function Conclusion() {
@@ -11,7 +11,11 @@ export function Conclusion() {
           <span className='conclusion-phrase'>{t('Thank_you')} 💝</span>
         </p>
 
-        <img className='portfolio-conclusion-img' src={concluImage} />
+        <img
+          className='portfolio-conclusion-img'
+          src={concluImage}
+          alt='Shania waving'
+        />
       </div>
     </div>
   );

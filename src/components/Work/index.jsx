@@ -1,9 +1,9 @@
 import './index.scss';
 import { WorkCategory } from '../WorkCategory';
-import bookiImage from './../../assets/images/work/Booki.png';
-import ninaImage from './../../assets/images/work/Nina.png';
-import kasaImage from './../../assets/images/work/Kasa.png';
-import grimoireImage from './../../assets/images/work/Vieux_grimoire.png';
+import bookiImage from './../../assets/images/work/Booki.webp';
+import ninaImage from './../../assets/images/work/Nina.webp';
+import kasaImage from './../../assets/images/work/Kasa.webp';
+import grimoireImage from './../../assets/images/work/Vieux_grimoire.webp';
 import { useTranslation } from 'react-i18next';
 
 export function Work() {

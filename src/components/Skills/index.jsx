@@ -1,27 +1,27 @@
 import './index.scss';
 import { useTranslation } from 'react-i18next';
 import { SkillCategory } from '../SkillCategory';
-import aspnetIcon from '../../assets/images/front/aspnetIcon.jpg';
-import bootstrapIcon from '../../assets/images/front/bootstrapIcon.png';
-import cssIcon from '../../assets/images/front/cssIcon.png';
-import htmlIcon from '../../assets/images/front/htmlIcon.png';
-import javascriptIcon from '../../assets/images/front/javascriptIcon.png';
-import reactIcon from '../../assets/images/front/reactIcon.svg';
-import sassIcon from '../../assets/images/front/sassIcon.png';
-import EFCoreIcon from '../../assets/images/back/EFCOREIcon.png';
-import expressIcon from '../../assets/images/back/expressIcon.png';
-import linqIcon from '../../assets/images/back/linq.png';
-import mongoIcon from '../../assets/images/back/mongodbIcon.svg';
-import nodeIcon from '../../assets/images/back/nodeIcon.png';
-import sharpIcon from '../../assets/images/back/sharpIcon.png';
-import sqlIcon from '../../assets/images/back/sqlIcon.png';
+import aspnetIcon from '../../assets/images/back/aspnetIcon.webp';
+import bootstrapIcon from '../../assets/images/front/bootstrapIcon.webp';
+import cssIcon from '../../assets/images/front/cssIcon.webp';
+import htmlIcon from '../../assets/images/front/htmlIcon.webp';
+import javascriptIcon from '../../assets/images/front/javascriptIcon.webp';
+import reactIcon from '../../assets/images/front/reactIcon.webp';
+import sassIcon from '../../assets/images/front/sassIcon.webp';
+import EFCoreIcon from '../../assets/images/back/EFCOREIcon.webp';
+import expressIcon from '../../assets/images/back/expressIcon.webp';
+import linqIcon from '../../assets/images/back/linq.webp';
+import mongoIcon from '../../assets/images/back/mongodbIcon.webp';
+import nodeIcon from '../../assets/images/back/nodeIcon.webp';
+import sharpIcon from '../../assets/images/back/sharpIcon.webp';
+import sqlIcon from '../../assets/images/back/sqlIcon.webp';
 import githubIcon from '../../assets/images/tools/githubIcon.webp';
-import gitIcon from '../../assets/images/tools/gitIcon.png';
+import gitIcon from '../../assets/images/tools/gitIcon.webp';
 import npmIcon from '../../assets/images/tools/npmIcon.webp';
-import ssisIcon from '../../assets/images/tools/ssisIcon.png';
-import ssmsIcon from '../../assets/images/tools/ssmsIcon.png';
-import vscodeIcon from '../../assets/images/tools/vscodeIcon.png';
-import vsIcon from '../../assets/images/tools/vsIcon.png';
+import ssisIcon from '../../assets/images/tools/ssisIcon.webp';
+import ssmsIcon from '../../assets/images/tools/ssmsIcon.webp';
+import vscodeIcon from '../../assets/images/tools/vscodeIcon.webp';
+import vsIcon from '../../assets/images/tools/vsIcon.webp';
 
 const frontList = [
   { id: 1, src: aspnetIcon, alt: 'asp.net icon', name: 'Asp.net mvc' },

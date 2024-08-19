@@ -1,4 +1,4 @@
-import introImage from './../../assets/images/about.png';
+import introImage from './../../assets/images/about.webp';
 import resumeFile from './../../assets/Resume_Shania_Sidimana.pdf';
 import { useTranslation } from 'react-i18next';
 import { saveAs } from 'file-saver';
@@ -26,7 +26,11 @@ export function Introduction() {
           <br></br> {t('Intro_para_second')}
         </p>
 
-        <img className='portfolio-intro-img' src={introImage} />
+        <img
+          className='portfolio-intro-img'
+          src={introImage}
+          alt='Shania saying hi'
+        />
       </div>
       <p className='downloadResume'>
         {t('Download_resume')}
